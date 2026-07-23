@@ -19,7 +19,7 @@ function categories_Saluran_7(feature, value, size, resolution, labelText,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,255,255,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
+        stroke: new ol.style.Stroke({color: 'rgba(202,167,34,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -50,7 +50,7 @@ function categories_Saluran_7(feature, value, size, resolution, labelText,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,71,171,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,255,255,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -77,7 +77,7 @@ function categories_Saluran_7(feature, value, size, resolution, labelText,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,191,255,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,71,171,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -110,7 +110,7 @@ var style_Saluran_7 = function(feature, resolution){
     var labelFont = "9.1px \'Open Sans\', sans-serif";
     var labelFill = "#000000";
     var bufferColor = "#fafafa";
-    var bufferWidth = 3.0;
+    var bufferWidth = 2.4000000000000004;
     var textAlign = 'left';
     var offsetX = 8;
     var offsetY = 3;
