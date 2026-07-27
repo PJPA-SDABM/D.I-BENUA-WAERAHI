@@ -63,8 +63,9 @@
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>
-        <div style="background: rgba(225, 228, 227, 0.85); padding: 8px; border-radius: 4px; display: inline-block;">
-        <img src="legenda.svg" alt="Legenda Kondisi" style="max-width: 130px; height: auto; display: block;">
-</div>
+        <!-- Legenda Melayang di Atas Peta -->
+        <div style="position: absolute; bottom: 20px; right: 10px; z-index: 1000; background: rgba(225, 228, 227, 0.85); padding: 8px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+          <img src="legenda.svg" alt="Legenda Kondisi" style="max-width: 130px; height: auto; display: block;">
+        </div>
     </body>
 </html>
