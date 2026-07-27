@@ -47,57 +47,10 @@
     </head>
     <body>
         <div id="map">
-           <!-- KONTROL LEGENDA MELAYANG (TOMBOL + WADAH LEGENDA) -->
-        <div style="position: absolute; bottom: 30px; left: 10px; z-index: 1000; font-family: sans-serif;">
-  <!-- 1. Tombol Buka/Tutup Legenda -->
-          <button id="btn-legenda" onclick="toggleLegenda()" style="
-            background: #ffffff;
-            border: 2px solid rgba(0,0,0,0.2);
-            border-radius: 4px;
-            padding: 6px 12px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #333;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            float: right;
-          ">
-            <span>🗺️</span>
-           <!--  <span id="text-btn">Buka Legenda</span>-->
-          </button>
-  <!-- 2. Kotak Gambar Legenda (Default: Tersembunyi) -->
-          <div id="box-legenda" style="
-            display: none;
-            margin-bottom: 8px;
-            background: rgba(225, 228, 227, 0.9);
-            padding: 8px;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-            clear: both;
-          ">
-            <img src="aset_kondisi.svg" alt="Legenda Kondisi" style="max-width: 140px; height: auto; display: block;">
-          </div>
-
-        </div>
-
-<!-- 3. Script untuk Mengontrol Tombol (Tutup/Buka) -->
-        <script>
-          function toggleLegenda() {
-            var box = document.getElementById("box-legenda");
-            var textBtn = document.getElementById("text-btn");
-
-            if (box.style.display === "none" || box.style.display === "") {
-              box.style.display = "block";
-              textBtn.innerText = "Tutup Legenda";
-            } else {
-              box.style.display = "none";
-              textBtn.innerText = "Buka Legenda";
-            }
-          }
-</script>
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
@@ -109,10 +62,6 @@
         <script src="styles/JalurInspeksi_3_style.js"></script><script src="styles/Saluran_4_style.js"></script><script src="styles/Bangunan_5_style.js"></script><script src="styles/PetakTersier_6_style.js"></script><script src="styles/Saluran_7_style.js"></script><script src="styles/Bangunan_8_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
-        <!-- Legenda Melayang di Atas Peta 
-        <div style="position: absolute; bottom: 20px; left: 10px; z-index: 1000; background: rgba(225, 228, 227, 0.85); padding: 8px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
-          <img src="aset_kondisi.svg" alt="Legenda Kondisi" style="max-width: 130px; height: auto; display: block;">
-        </div> -->
+        <script src="./resources/qgis2web.js"></script>        
     </body>
 </html>
